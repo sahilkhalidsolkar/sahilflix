@@ -38,7 +38,7 @@ const FullMoviePage = () => {
 
                     <p>Title : {movie.title}</p>
                     <p>Year : {movie.year} </p>
-                    <p> IMDB Rating:<i className="fas fa-star " style={{
+                    <p> IMDB Rating : <i className="fas fa-star " style={{
                         color: '#ffec80',
                         padding: '0px 6px'
                     }}></i>{`${movie.rating || 0}/10`}</p>
@@ -48,6 +48,19 @@ const FullMoviePage = () => {
                 </div>
                 <div className="col s12">
                     {movie.yt_trailer_code && <YouTube videoId={movie.yt_trailer_code} opts={opts} />}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card  darken-1" style={{ backgroundColor: 'rgb(4, 248, 37)', borderRadius: '10px' }}>
+                        <div class="card-content black-text">
+                            <span class="card-title" style={{ fontSize: '1.6rem', fontWeight: '600', }}><i class="fas fa-info-circle"></i> Note</span>
+                            <p style={{ fontSize: '1.2rem' }}>You can use torrent downloading client like flud torrent, utorrent, etc.
+
+
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="row">
